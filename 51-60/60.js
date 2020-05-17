@@ -14,6 +14,8 @@ students = [
 ];
 let id = 0;
 
+students.sort();
+
 const numbering = {
   number: id,
   name: "",
@@ -24,3 +26,12 @@ for (let i = 0; i < students.length; i++) {
   numbering.name = students[i];
   console.log("번호 : " + numbering.number + ",  이름 : " + numbering.name);
 }
+
+//답안
+/*
+students.sort();
+
+for (let key in students){
+  console.log(`번호: ${parseInt(key, 10)+1}, 이름: ${students[key]}`);
+}
+*/
